@@ -17,8 +17,8 @@ if sys.version_info[0] == 2:  # Python 2
     from urllib import quote
 else:  # Python 3
     from urllib.parse import quote
-google_username = "***"
-google_password = "***"
+google_username = ""  #Insert gmail email
+google_password = ""  #Insert gmail password
 
 # Login to Google. Only need to run this once, the rest of requests will use the same session.
 pytrend = TrendReq(google_username, google_password, custom_useragent='My Pytrends Script')
